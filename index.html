@@ -9,7 +9,7 @@
       <!-- Added new link to fontawesome -->
     <script rel="stylesheet" src="https://kit.fontawesome.com/3cf0805601.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"  rel="stylesheet" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -27,6 +27,7 @@
   <!-- .col-lg = large > 992px -->
   <!-- textarea is where the user will input task -->
   <!-- "fa-regular fa-floppy-disk fa-2xl" is the icon and the size = view fontawesome for more options -->
+  <!-- needed to add a ID with the number matching the time in order to get it to hightlight what hour we are on -->
   <div class="row time-block" id="9">
       <div class="col-lg hour">9am</div>
       <textarea class="col-10 task"></textarea>
@@ -50,7 +51,7 @@
     <textarea class="col-10 task"></textarea>
     <button class="col-1 saveBtn"><i class="fa-regular fa-floppy-disk fa-2xl"></i></button>
   </div>
-      
+      <!-- numbers need to follow the 24hour clock -->
   <div class="row time-block" id="13">
     <div class="col-lg hour">1PM</div>
     <textarea class="col-10 task"></textarea>
@@ -93,6 +94,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-<script src="/js/script.js"></script>
+<script src="/assets/js/script.js"></script>
 </body>
 </html>
