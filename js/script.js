@@ -45,4 +45,25 @@ function saveTask() {
     });
 }
 
+// This saves the task
+$(document).ready(function(){
+    saveTask();
+});
 
+// function that saves info when the page is refreshed
+function oldTask() {
+    // get all elements with the class "task"
+    var taskEl = $(".task");
+    // code loops through task elements gets the item from local storage
+    taskEl.each(function() {
+        var time = $(this).siblings(".hour").text();
+        var task = localStorage.getItem(time);
+        $(this).val(task);
+    });
+}
+
+
+// Need to call both these functions so that they appear when the page is refreshed. 
+//They need to be together and last so that they correctly display the hour and tasks
+colour();
+oldTask();
