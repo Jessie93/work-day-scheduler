@@ -46,9 +46,8 @@ function saveTask() {
 }
 
 // This saves the task
-$(document).ready(function(){
     saveTask();
-});
+
 
 // function that saves info when the page is refreshed
 function oldTask() {
